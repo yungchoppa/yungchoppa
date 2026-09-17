@@ -1,16 +1,17 @@
-## Hi there 👋
+# Hi there 👋
 
-<!--
-**yungchoppa/yungchoppa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend Engineer | Go & Distributed Systems | Open Source Contributor
 
-Here are some ideas to get you started:
+### 🛠 Tech Stack
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 📊 Stats
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=yungchoppa&show_icons=true&include_all_commits=true&theme=radical" alt="GitHub Stats" />
+</p>
+
+### 🚀 Recent Open Source Activity
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
