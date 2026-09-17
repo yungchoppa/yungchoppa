@@ -13,5 +13,6 @@ Backend Engineer | Go & Distributed Systems | Open Source Contributor
 </p>
 
 ### 🚀 Recent Open Source Activity
+* Contributed to [golang/tools](https://github.com/golang/tools) (Merged / PR)
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
