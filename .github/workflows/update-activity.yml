@@ -2,19 +2,39 @@ name: Update GitHub Activity
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # Запуск каждые 6 часов
-  workflow_dispatch:      # Возможность запуска вручную
+    - cron: "0 */6 * * *" # Runs every 6 hours
+  workflow_dispatch:      # Allows manual trigger
 
 jobs:
-  build:
+  update-readme:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: jamesgeorge007/github-activity-readme@master
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+          check-latest: true
+
+      - name: Update recent activity
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          COMMIT_MSG: "chore: update recent activity"
-          MAX_LINES: 5
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: |
+          go run scripts/update_activity.go
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(profile): update open source activity and heatmaps [skip ci]"
+            git push
+          else
+            echo "No changes to commit in README.md"
+          fi
