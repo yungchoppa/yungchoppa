@@ -12,7 +12,11 @@ Backend Engineer | Go & Distributed Systems | Open Source Contributor
   <img src="https://github-readme-stats.vercel.app/api?username=yungchoppa&show_icons=true&include_all_commits=true&theme=radical" alt="GitHub Stats" />
 </p>
 
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=yungchoppa&show_icons=true&include_all_commits=true&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yungchoppa&layout=compact&theme=radical" alt="Top Langs" />
+</p>
+
 ### 🚀 Recent Open Source Activity
-* Contributed to [golang/tools](https://github.com/golang/tools) (Merged / PR)
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
